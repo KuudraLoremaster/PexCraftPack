@@ -1,2 +1,2 @@
-# PexCraftPack
-A modpack all about Pexing
+# Pexological Journey
+A modpack all about Pexing!
