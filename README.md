@@ -1,4 +1,4 @@
-# PexCraft
+# Pexological Journey
 
 A modpack all about pexing and retardation
 
