@@ -1,21 +1,29 @@
-crafting.addShaped('balanced_diamond', item('minecraft:diamond') * 64, [
-        [ore('gemLapis'), item('minecraft:iron_ingot'), item('minecraft:redstone')],
-        [item("minecraft:gold_ingot"), item('minecraft:carrot'), item("minecraft:coal")], 
-        [item('minecraft:nether_star'), item("minecraft:dirt"), item('minecraft:nether_star')]
+// crafting recipes
+crafting.addShaped('redstone_engineering_block', item('immersiveengineering:metal_decoration0', 3) * 1, [
+        [metaitem('cableGtSingleTin'), item('gregtech:meta_plate', 2064), metaitem('cableGtSingleTin')],
+        [item('gregtech:meta_item_1', 217), item('gregtech:machine', 986), item('gregtech:meta_item_1', 232)], 
+        [metaitem('cableGtSingleTin'), item('gregtech:meta_plate', 2064), metaitem('cableGtSingleTin')]
 
 
 ])
-crafting.addShaped('balanced_pex', item('pexologicaljourney:pex_ingot') * 64, [
-        [ore('gemLapis'), item('minecraft:iron_ingot'), item('minecraft:redstone')],
-        [item("minecraft:gold_ingot"), item('minecraft:carrot'), item("minecraft:coal")], 
-        [item('minecraft:nether_star'), item("minecraft:dirt"), item('minecraft:diamond')]
 
+// assembler recipes
+recipemap('assembler').recipeBuilder()
+        .fluidInputs(liquid('redstone') * 144)
+        .inputs(item('gregtech:meta_wire_fine', 112) * 4,item('gregtech:machine', 986), item('gregtech:meta_item_1', 217), item('gregtech:meta_item_1', 232))
+        .outputs(item('immersiveengineering:metal_decoration0', 3) * 1)
+        .duration(50)
+        .EUt(16)
+        .buildAndRegister()
 
-])
-crafting.addShaped('balanced_iron', item('minecraft:piston') * 2, [
-        [ore('plankWood'), ore('plankWood'), ore('plankWood')],
-        [item("minecraft:cobblestone"), item('pexologicaljourney:pex_ingot'), item("minecraft:cobblestone")], 
-        [item('minecraft:cobblestone'), item("minecraft:redstone"), item('minecraft:cobblestone')]
+// chemical reactor recipes
+recipemap('chemical_reactor').recipeBuilder()
+        .fluidInputs(liquid('hydrogen')*720,liquid('potassium')*144,liquid('oxygen')*144)
+        .inputs(item('gregtech:meta_dust', 18),item('gregtech:meta_dust', 103) * 2)
+        .outputs(item('pexologicaljourney:pex_ingot') * 12)
+        .duration(500)
+        .EUt(64)
+        .buildAndRegister()
 
-
-])
+// remove recipes
+crafting.remove(item(/*recipe name here*/)) 
