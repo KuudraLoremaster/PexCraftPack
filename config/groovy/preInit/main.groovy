@@ -1,1 +1,0 @@
-content.createItem('pex_ingot').register()
