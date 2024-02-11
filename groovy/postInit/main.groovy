@@ -17,6 +17,13 @@ crafting.addShaped('light_engineering_block', item('immersiveengineering:metal_d
         [item('gregtech:meta_item_1', 127), item('immersiveengineering:material', 8), item('gregtech:meta_item_1', 127)]
 ])
 
+crafting.addShaped('radiator_block', item('immersiveengineering:metal_decoration0', 7) * 1, [
+        [item('gregtech:cable_single', 25),ore('circuitMv'),item('gregtech:cable_single', 25)],
+        [item('gregtech:meta_item_1', 128),item('gregtech:machine', 987),item('gregtech:meta_item_1', 143)],
+        [item('gregtech:cable_single', 25),ore('circuitMv'),item('gregtech:cable_single', 25)],
+])
+
+
 crafting.addShaped('steel frame conversion', item('immersiveengineering:metal_decoration1', 1) * 8, [
         [item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4)],
         [item('gregtech:meta_block_frame_20',4),null,item('gregtech:meta_block_frame_20',4)],
@@ -28,7 +35,9 @@ crafting.addShaped('gregified_iron_sheetmetal', item('immersiveengineering:sheet
         [item('gregtech:meta_plate', 51), item('gregtech:meta_plate', 51),item('gregtech:meta_plate', 51)],
         [item('gregtech:meta_plate', 51), ore('craftingToolWrench'),item('gregtech:meta_plate', 51)]
 
+
 ])
+
 //shapeless crafting recipes 
 
 // assembler recipes
