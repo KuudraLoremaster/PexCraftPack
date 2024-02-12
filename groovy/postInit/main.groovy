@@ -1,4 +1,4 @@
-//shaped crafting recipes
+//shaped crafting
 crafting.addShaped('redstone_engineering_block', item('immersiveengineering:metal_decoration0', 3) * 1, [
         [metaitem('cableGtSingleTin'), item('gregtech:meta_plate', 2064), metaitem('cableGtSingleTin')],
         [item('gregtech:meta_item_1', 217), item('gregtech:machine', 986), item('gregtech:meta_item_1', 232)], 
@@ -23,6 +23,8 @@ crafting.addShaped('radiator_block', item('immersiveengineering:metal_decoration
         [item('gregtech:cable_single', 25),ore('circuitMv'),item('gregtech:cable_single', 25)],
 ])
 
+//crafting.addShaped('external_heater_block', item('',)*1
+
 
 crafting.addShaped('steel frame conversion', item('immersiveengineering:metal_decoration1', 1) * 8, [
         [item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4)],
@@ -38,9 +40,9 @@ crafting.addShaped('gregified_iron_sheetmetal', item('immersiveengineering:sheet
 
 ])
 
-//shapeless crafting recipes 
+//shapeless crafting
 
-// assembler recipes
+// assembler
 recipemap('assembler').recipeBuilder()
         .fluidInputs(liquid('redstone') * 144)
         .inputs(item('gregtech:meta_wire_fine', 112) * 4,item('gregtech:machine', 986), item('gregtech:meta_item_1', 217), item('gregtech:meta_item_1', 232))
@@ -59,11 +61,12 @@ recipemap('assembler').recipeBuilder()
 
 recipemap('assembler').recipeBuilder()
         .fluidInputs(liquid('steel') * 576)
-        .inputs(item('gregtech:meta_plate', 324) * 2,item('immersiveengineering:metal_decoration0', 4), item('gregtech:meta_item_1', 172) * 4)
+        .inputs(item('immersiveengineering:metal_decoration0', 4), item('gregtech:meta_item_1', 172) * 4, item('gregtech:meta_plate', 324) * 2)
         .outputs(item('immersiveengineering:metal_decoration0', 5) * 2)
         .duration(50)
         .EUt(64)
         .buildAndRegister()
+
 recipemap('assembler').recipeBuilder()
         .fluidInputs(liquid('iron') * 288)
         .inputs(item('gregtech:meta_plate', 51) * 2)
@@ -72,16 +75,26 @@ recipemap('assembler').recipeBuilder()
         .EUt(16)
         .buildAndRegister()
 
+recipemap('assembler').recipeBuilder()
+        .fluidInputs(liquid('soldering_alloy') * 72)
+        .inputs(item('gregtech:machine', 987), item('gregtech:meta_item_1', 128), item('gregtech:meta_item_1', 143),item('gregtech:wire_single', 25) * 2, ore('circuitMv' * 2))
+        .outputs(item('immersiveengineering:metal_decoration0', 7) * 20)
+        .duration(50)
+        .EUt(256)
+        .buildAndRegister()
 
-// chemical reactor recipes
+
+// chemical reactor 
 recipemap('chemical_reactor').recipeBuilder()
-        .fluidInputs(liquid('hydrogen')*720,liquid('potassium')*144,liquid('oxygen')*144)
+        .fluidInputs(liquid('hydrogen')*720,liquid('potassium')*144,liquid('oxygen')*144) //replace this with a real chain
         .inputs(item('gregtech:meta_dust', 18),item('gregtech:meta_dust', 103) * 2)
         .outputs(item('pexologicaljourney:pex_dust') * 12)
         .duration(500)
         .EUt(64)
         .buildAndRegister()
 
+/*recipemap('chemical_reactor').recipeBuilder()
+       .fluidInputs(liquid())*/
 //ebf
 recipemap('electric_blast_furnace').recipeBuilder()
         .inputs(item('pexologicaljourney:pex_dust'))
