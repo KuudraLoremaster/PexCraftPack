@@ -22,20 +22,13 @@ crafting.addShaped('radiator_block', item('immersiveengineering:metal_decoration
         [item('gregtech:meta_item_1', 128),item('gregtech:machine', 987),item('gregtech:meta_item_1', 143)],
         [item('gregtech:cable_single', 25),ore('circuitMv'),item('gregtech:cable_single', 25)]
 ])
-/* 
-crafting.addShaped('external_heater_block', item('externalheaterid', int)*1, [
-        [item('tincable'),ore('circuitLv'),item('tincable')],
-        [item('invarplate'),item('lvhull'),item('invarplate')],
-        [item('tincable'),item('copperplate'),item('tincable')]
+ 
+crafting.addShaped('external_heater_block', item('immersiveengineering:metal_device1', 1)*1, [
+        [item('gregtech:cable_single', 112),ore('circuitLv'),item('gregtech:cable_single', 112)],
+        [item('gregtech:meta_plate', 287),item('gregtech:machine', 986),item('gregtech:meta_plate', 287)],
+        [item('gregtech:cable_single', 112),item('gregtech:meta_plate', 25),item('gregtech:cable_single', 112)]
 ])
  
- 
-crafting.addShaped('projector', item('ie projector') * 1, [
-        [item('steelplate'),item('treatedwood'), item('steelplate')],
-        [item('treatedwood'),ore('lvbattery'), ore('glass')],
-        [item('treatedwoodstick'),null,null]
-])
- */
 crafting.addShaped('steel frame conversion', item('immersiveengineering:metal_decoration1', 1) * 8, [
         [item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4),item('gregtech:meta_block_frame_20',4)],
         [item('gregtech:meta_block_frame_20',4),null,item('gregtech:meta_block_frame_20',4)],
