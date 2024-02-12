@@ -22,7 +22,7 @@ crafting.addShaped('radiator_block', item('immersiveengineering:metal_decoration
         [item('gregtech:meta_item_1', 128),item('gregtech:machine', 987),item('gregtech:meta_item_1', 143)],
         [item('gregtech:cable_single', 25),ore('circuitMv'),item('gregtech:cable_single', 25)]
 ])
- 
+
 crafting.addShaped('external_heater_block', item('immersiveengineering:metal_device1', 1)*1, [
         [item('gregtech:cable_single', 112),ore('circuitLv'),item('gregtech:cable_single', 112)],
         [item('gregtech:meta_plate', 287),item('gregtech:machine', 986),item('gregtech:meta_plate', 287)],
@@ -42,7 +42,6 @@ crafting.addShaped('gregified_iron_sheetmetal', item('immersiveengineering:sheet
  
  
 ])
- 
 //shapeless crafting
  
 // assembler
@@ -55,7 +54,7 @@ recipemap('assembler').recipeBuilder()
         .buildAndRegister()
  
 recipemap('assembler').recipeBuilder()
-        .fluidInputs(liquid('iron') * 288)
+        .fluidInputs(liquid('soldering_alloy') * 72)
         .inputs(item('gregtech:meta_plate', 51) * 2,item('gregtech:machine', 986), item('gregtech:meta_item_1', 127) * 4)
         .outputs(item('immersiveengineering:metal_decoration0', 4) * 2)
         .duration(50)
@@ -89,15 +88,31 @@ recipemap('assembler').recipeBuilder()
 
 // chemical reactor
 recipemap('chemical_reactor').recipeBuilder()
+        .fluidInputs(liquid('hydrogen')*720,liquid('lithium')*144,liquid('oxygen')*144) //replace this with a real chain
+        .inputs(item('gregtech:meta_dust', 18),item('gregtech:meta_dust', 103) * 2)
+        .outputs(item('pexologicaljourney:lex_ingot') * 12)
+        .duration(500)
+        .EUt(256)
+        .buildAndRegister()
+
+recipemap('chemical_reactor').recipeBuilder()
         .fluidInputs(liquid('hydrogen')*720,liquid('potassium')*144,liquid('oxygen')*144) //replace this with a real chain
         .inputs(item('gregtech:meta_dust', 18),item('gregtech:meta_dust', 103) * 2)
         .outputs(item('pexologicaljourney:pex_ingot') * 12)
         .duration(500)
-        .EUt(64)
+        .EUt(2048)
+        .buildAndRegister()
+
+recipemap('chemical_reactor').recipeBuilder()
+        .fluidInputs(liquid('hydrogen')*720,liquid('rhodium')*144,liquid('oxygen')*144) //replace this with a real chain
+        .inputs(item('gregtech:meta_dust', 18),item('gregtech:meta_dust', 103) * 2)
+        .outputs(item('pexologicaljourney:rex_ingot') * 12)
+        .duration(500)
+        .EUt(32768)
         .buildAndRegister()
  
 /*recipemap('chemical_reactor').recipeBuilder()
-       .fluidInputs(liquid())
+       .fluidInputs(liquid())*/
 //ebf
 recipemap('electric_blast_furnace').recipeBuilder()
         .inputs(item('pexologicaljourney:pex_dust'))
@@ -107,5 +122,5 @@ recipemap('electric_blast_furnace').recipeBuilder()
         .buildAndRegister()
 // remove recipes
 //crafting.remove(item(''))
-*/
+
  
