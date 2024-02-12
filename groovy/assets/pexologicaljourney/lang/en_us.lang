@@ -1,6 +1,12 @@
 # Items
+item.pexologicaljourney.lex_ingot.name=L.E.X Ingot
 item.pexologicaljourney.pex_ingot.name=P.E.X Ingot
+item.pexologicaljourney.rex_ingot.name=R.E.X Ingot
+
 # Fluids
+fluid.pexologicaljourney.molten_lex.name=Molten Lithium Ethyl Xanthate
 fluid.pexologicaljourney.molten_pex.name=Molten Potassium Ethyl Xanthate
+fluid.pexologicaljourney.molten_rex.name=Molten Rhodium Ethyl Xanthate
+
 # Creative Tab
 itemGroup.pexologicaljourney.creative_tab=Pexcraft
