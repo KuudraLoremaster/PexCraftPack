@@ -59,5 +59,22 @@ crafting.addShaped('gregified_steel_component', item('immersiveengineering:mater
         [item('gregtech:meta_plate', 324),item('gregtech:cable_single', 25),item('gregtech:meta_plate', 324)]
 ])
 
+crafting.addShaped('projector', item('immersivepetroleum:schematic') * 1, [
+        [item('gregtech:meta_lens', 2000), ore('circuitLv'), null],
+        [item('gregtech:meta_plate', 324), ore('batteryLv'), ore('circuitLv')],
+        [null, item('gregtech:meta_plate', 324), item('gregtech:meta_plate', 1648)]
+])
+
+crafting.addShaped('generator_block', item('immersiveengineering:metal_decoration0', 6) * 1, [
+        [item('gregtech:cable_single', 25), item('gregtech:meta_plate', 25), item('gregtech:cable_single', 25)],
+        [item('gregtech:meta_plate', 324), item('immersiveengineering:metal_device1', 2), item('gregtech:meta_plate', 324)],
+        [item('gregtech:cable_single', 25), ore('circuitMv'), item('gregtech:cable_single', 25)]
+])
+
+crafting.addShaped('dynamo', item('immersiveengineering:metal_device1', 2) * 1, [
+        [item('gregtech:meta_plate', 324), item('gregtech:wire_single', 25), item('gregtech:meta_plate', 324)],
+        [item('gregtech:meta_plate', 2064), item('gregtech:wire_coil'), item('gregtech:meta_plate', 2064)],
+        [null, metaitem('plate.ultra_low_power_integrated_circuit'), null]
+])
 //shapeless crafting
 //crafting.addShapeless()
