@@ -2,6 +2,8 @@
 item.pexologicaljourney.lex_ingot.name=L.E.X Ingot
 item.pexologicaljourney.pex_ingot.name=P.E.X Ingot
 item.pexologicaljourney.rex_ingot.name=R.E.X Ingot
+item.pexologicaljourney.potassium_hydroxide.name=Potassium Hydroxide
+item.pexologicaljourney.carbon_disulfide.name=Carbon Disulfide
 
 # Fluids
 fluid.pexologicaljourney.molten_lex.name=Molten Lithium Ethyl Xanthate
