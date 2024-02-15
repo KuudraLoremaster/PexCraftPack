@@ -7,6 +7,7 @@ item.pexologicaljourney.rex_ingot.name=R.E.X Ingot
 fluid.pexologicaljourney.molten_lex.name=Molten Lithium Ethyl Xanthate
 fluid.pexologicaljourney.molten_pex.name=Molten Potassium Ethyl Xanthate
 fluid.pexologicaljourney.molten_rex.name=Molten Rhodium Ethyl Xanthate
+fluid.pexologicaljourney.isopropyl_alcohol.name=Isopropyl Alcohol
 
 # Creative Tab
 itemGroup.pexologicaljourney.creative_tab=Pexcraft
