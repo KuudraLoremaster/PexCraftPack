@@ -1,5 +1,4 @@
 // Isopropyl Alcohol
-
 recipemap('chemical_reactor').recipeBuilder()
         .fluidInputs(liquid('water') * 2000, liquid('propene')*1000)
         .fluidOutputs(fluid('isopropyl_alcohol') * 3000)
@@ -8,7 +7,7 @@ recipemap('chemical_reactor').recipeBuilder()
         .buildAndRegister()
 
 
-// Potassium Hydroxide
+// KOH
 recipemap('chemical_reactor').recipeBuilder()
         .fluidInputs(liquid('water') * 2000)
         .inputs(item('gregtech:meta_dust', 83) * 2)
@@ -17,8 +16,8 @@ recipemap('chemical_reactor').recipeBuilder()
         .duration(200)
         .EUt(128)
         .buildAndRegister()
-// Carbon Disulfide
 
+// CS2
 recipemap('mixer').recipeBuilder()
         .inputs(item('gregtech:meta_dust', 18), item('gregtech:meta_dust', 103) * 2)
         .notConsumable([metaitem('circuit.integrated').withNbt(["Configuration": 1])])
@@ -28,8 +27,7 @@ recipemap('mixer').recipeBuilder()
         .buildAndRegister()
 
 
-// PEX!!!
-
+// PEX
 recipemap('chemical_reactor').recipeBuilder()
         .inputs(item('pexologicaljourney:carbon_disulfide') * 1, item('pexologicaljourney:potassium_hydroxide') * 1)
         .fluidInputs(fluid('isopropyl_alcohol') * 1000)
