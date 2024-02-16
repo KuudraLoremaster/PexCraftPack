@@ -12,4 +12,40 @@ event_manager.listen { MaterialEvent event ->
                 .flags('generate_plate', 'generate_rod', 'generate_gear')
                 .build();
         pex.setFormula("C3H8OCS2K", true);
+        def lex = new Material.Builder(32001, resource('pj', 'lex'))
+                .ingot()
+                .color(0x3261a8)
+                .blastTemp(3750, 'LOW', 1024, 400)
+                .fluid()
+                .iconSet("shiny")
+                .flags('generate_plate', 'generate_rod', 'generate_gear')
+                .build();
+        lex.setFormula("WIP", true);
+        def rex = new Material.Builder(32002, resource('pj', 'rex'))
+                .ingot()
+                .color(0xa83279)
+                .blastTemp(2000, 'LOW', 1024, 400)
+                .fluid()
+                .iconSet("shiny")
+                .flags('generate_plate', 'generate_rod', 'generate_gear')
+                .build();
+        rex.setFormula("WIP2", true);
+        def carbondisulfide = new Material.Builder(32003, resource('pj', 'carbondisulfide'))
+                .dust()
+                .color(0xa89932)
+                .build();
+        carbondisulfide.setFormula("CS2", true);
+        def isopropyl = new Material.Builder(32004, resource('pj', 'isopropyl'))
+                .fluid()
+                .build();
+        isopropyl.setFormula("C3H8O", true);
+        def potassiumhydroxide = new Material.Builder(32004, resource('pj', 'potassiumhydroxide'))
+                .dust()
+                .color(0xa89932)
+                .build();
+        carbondisulfide.setFormula("KOH", true);
+        def isopropyl = new Material.Builder(32004, resource('pj', 'isopropyl'))
+                .fluid()
+                .build();
+        isopropyl.setFormula("C3H8O", true);
 }
