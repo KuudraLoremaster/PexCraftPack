@@ -19,7 +19,7 @@ recipemap('chemical_reactor').recipeBuilder()
         .buildAndRegister()
 // Carbon Disulfide
 
-recipemap('large_chemical_reactor').recipeBuilder()
+recipemap('mixer').recipeBuilder()
         .inputs(item('gregtech:meta_dust', 18), item('gregtech:meta_dust', 103) * 2)
         .notConsumable([metaitem('circuit.integrated').withNbt(["Configuration": 1])])
         .outputs(item('pexologicaljourney:carbon_disulfide'))
