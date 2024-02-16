@@ -1,4 +1,3 @@
-//shaped crafting
 crafting.addShaped('redstone_engineering_block', item('immersiveengineering:metal_decoration0', 3) * 1, [
         [metaitem('cableGtSingleTin'), item('gregtech:meta_plate', 2064), metaitem('cableGtSingleTin')],
         [item('gregtech:meta_item_1', 217), item('gregtech:machine', 986), item('gregtech:meta_item_1', 232)],
@@ -76,5 +75,3 @@ crafting.addShaped('dynamo', item('immersiveengineering:metal_device1', 2) * 1, 
         [item('gregtech:meta_plate', 2064), item('gregtech:wire_coil'), item('gregtech:meta_plate', 2064)],
         [null, metaitem('plate.ultra_low_power_integrated_circuit'), null]
 ])
-//shapeless crafting
-//crafting.addShapeless()
