@@ -80,3 +80,72 @@ mods.immersiveengineering.excavator.recipeBuilder()
     .ore('oreIron', 10)                       // Iron content in laterites
     .dimension(0, -1)                         // Found in both Overworld and Nether
     .register()
+
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('cobaltite_deposit')                
+    .weight(15000000)                         // Cobalt deposits are rare lol
+    .fail(0.12)                               // impure as shit often
+    .ore('oreCobalt', 75)                     // Cobalt (duh)
+    .ore('oreNickel', 15)                     // nickel
+    .ore('oreIron', 10)                       // Iron is also common in cobalt bearing deposits idk why its not in other packs
+    .dimension(0, -1)                         // Found in both Overworld and Nether
+    .register()
+
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('cassiterite_deposit')              
+    .weight(20000000)                         
+    .fail(0.10)                               // tin is weirdly complex to get irl so higher impurity
+    .ore('oreCassiterite', 40)                // tin
+    .ore('oreTin', 40)                        //tin
+    .ore('oreCopper', 15)                     // another case of idk why regular gregtech gets it wrong
+    .ore('oreIron', 5)                        // iron
+    .dimension(0)                             // Overworld only
+    .register()
+
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('tantalite_deposit')                
+    .weight(8000000)                          // rare as shit
+    .fail(0.20)                               // impure probably idk its like that for rare stuff
+    .ore('oreTantalite', 60)                  // Tantalum 
+    .ore('oreNiobium', 30)                    // Niobium 
+    .ore('oreIron', 10)                       // Iron 
+    .dimension(0)                             // Overworld only
+    .register()
+
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('uraninite_deposit')                
+    .weight(10000000)                         
+    .fail(0.18)                               // impure as shit due to minor impurities carrying heavy consequences
+    .ore('oreUraninite', 50)                  // Uranium 
+    .ore('oreUraninium',20)                   // Uranium
+    .ore('oreLead', 20)                       // Lead often found with uranium
+    .ore('oreThorium', 10)                    // Trace amounts of Thorium
+    .dimension(0, -1)                         // Found in Overworld and Nether
+    .register()
+
+rest is 
+// 5. Monazite deposit (Rare Earth Elements) 
+/*
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('monazite_deposit')                 // Rare earth elements ore deposit
+    .weight(12000000)                         // Moderate-sized deposit
+    .fail(0.15)                               // Moderate failure rate due to extraction complexity
+    .ore('oreNeodymium', 50)                  // Neodymium, a critical rare earth element
+    .ore('oreLanthanum', 25)                  // Lanthanum, another key REE
+    .ore('oreCerium', 15)                     // Cerium, found in monazite
+    .ore('oreThorium', 10)                    // Thorium, often found in rare earth ores
+    .dimension(0, -1)                         // Found in Overworld and Nether
+    .register()
+
+// 6. Platinum Group Metals (PGMs) deposit
+mods.immersiveengineering.excavator.recipeBuilder()
+    .name('pgm_deposit')                      // Platinum Group Metals (PGMs) deposit
+    .weight(9000000)                          // Very rare and small deposit
+    .fail(0.25)                               // High failure rate due to the rarity and value
+    .ore('orePlatinum', 40)                   // Platinum ore
+    .ore('orePalladium', 30)                  // Palladium ore
+    .ore('oreIridium', 20)                    // Iridium ore
+    .ore('oreGold', 10)                       // Gold is often found with PGMs
+    .dimension(0, -1)                         // Found in Overworld and Nether
+    .register()
+*/
