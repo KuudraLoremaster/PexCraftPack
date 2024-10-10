@@ -123,29 +123,24 @@ mods.immersiveengineering.excavator.recipeBuilder()
     .dimension(0, -1)                         // Found in Overworld and Nether
     .register()
 
-rest is 
-// 5. Monazite deposit (Rare Earth Elements) 
-/*
 mods.immersiveengineering.excavator.recipeBuilder()
-    .name('monazite_deposit')                 // Rare earth elements ore deposit
-    .weight(12000000)                         // Moderate-sized deposit
-    .fail(0.15)                               // Moderate failure rate due to extraction complexity
-    .ore('oreNeodymium', 50)                  // Neodymium, a critical rare earth element
-    .ore('oreLanthanum', 25)                  // Lanthanum, another key REE
-    .ore('oreCerium', 15)                     // Cerium, found in monazite
-    .ore('oreThorium', 10)                    // Thorium, often found in rare earth ores
+    .name('monazite_deposit')                 // Rare earth elements 
+    .weight(12000000)                         
+    .fail(0.15)                               // complex extraction apparently 
+    .ore('oreNeodymium', 25)                  // Neodymium
+    .ore('oreMonazite', 25)                   // Monazite
+    .ore('oreThorium', 25)                    // Thorium
     .dimension(0, -1)                         // Found in Overworld and Nether
     .register()
 
-// 6. Platinum Group Metals (PGMs) deposit
 mods.immersiveengineering.excavator.recipeBuilder()
-    .name('pgm_deposit')                      // Platinum Group Metals (PGMs) deposit
-    .weight(9000000)                          // Very rare and small deposit
-    .fail(0.25)                               // High failure rate due to the rarity and value
-    .ore('orePlatinum', 40)                   // Platinum ore
-    .ore('orePalladium', 30)                  // Palladium ore
-    .ore('oreIridium', 20)                    // Iridium ore
+    .name('pgm_deposit')                      
+    .weight(9000000)                          
+    .fail(0.25)                               // yeah I hate nice things
+    .ore('orePlatinumMetallicPowder', 40)     // Platinum 
+    .ore('orePalladiumMetallicPowder', 30)    // Palladium
+    .ore('oreNickel', 20)                     // Nickel
     .ore('oreGold', 10)                       // Gold is often found with PGMs
     .dimension(0, -1)                         // Found in Overworld and Nether
     .register()
-*/
+
