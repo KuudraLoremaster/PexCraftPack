@@ -38,12 +38,12 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = multiplayer.png
+  backgroundnormal = assets/multiplayer.png
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  path = vine-boom.wav
+  path = assets/vine-boom.wav
   action = setbuttonclicksound
 }
 
@@ -88,12 +88,12 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = exit.png
+  backgroundhovered = assets/exit.png
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  path = vine-boom.wav
+  path = assets/vine-boom.wav
   action = setbuttonclicksound
 }
 
@@ -123,12 +123,12 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = singleplayerbutton.png
+  backgroundnormal = assets/singleplayerbutton.png
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  path = vine-boom.wav
+  path = assets/vine-boom.wav
   action = setbuttonclicksound
 }
 
@@ -149,7 +149,7 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  path = vine-boom.wav
+  path = assets/vine-boom.wav
   action = setbuttonclicksound
 }
 
@@ -170,7 +170,7 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
-  path = vine-boom.wav
+  path = assets/vine-boom.wav
   action = setbuttonclicksound
 }
 
@@ -202,7 +202,7 @@ customization {
   x = 411
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
-  actionid = 114aeae0-9505-4785-aff6-647cce16a5091728286226092
+  actionid = 114aeae0c-9505-4785-aff6-647cce16a5091728286226092
   y = 340
   height = 9
 }
@@ -252,4 +252,3 @@ customization {
   y = 5
   height = 100
 }
-
