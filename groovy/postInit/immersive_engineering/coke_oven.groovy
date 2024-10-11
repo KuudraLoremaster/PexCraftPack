@@ -5,3 +5,6 @@ mods.immersiveengineering.coke_oven.add(item('gregtech:coke', 9), item('minecraf
 
 mods.immersiveengineering.coke_oven.removeByInput(item('minecraft:log'))
 mods.immersiveengineering.coke_oven.removeByOutput(item('immersiveengineering:coke'))
+
+mods.immersiveengineering.blast_furnace_fuel.add(item('gregtech:coke'), 1600)
+mods.immersiveengineering.blast_furnace_fuel.removeByInput(item('minecraft:coal'))
