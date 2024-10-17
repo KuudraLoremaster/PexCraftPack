@@ -20,7 +20,7 @@ event_manager.listen { MaterialEvent event ->
                 .iconSet("shiny")
                 .flags('generate_plate', 'generate_rod', 'generate_gear')
                 .build();
-        lex.setFormula("WIP", true);
+        lex.setFormula("C3H5OS2Li", true);
         def rex = new Material.Builder(32002, resource('pj', 'rex'))
                 .ingot()
                 .color(0xa83279)
@@ -29,7 +29,7 @@ event_manager.listen { MaterialEvent event ->
                 .iconSet("shiny")
                 .flags('generate_plate', 'generate_rod', 'generate_gear')
                 .build();
-        rex.setFormula("WIP2", true);
+        rex.setFormula("C3H5OS2Rh", true);
         def carbondisulfide = new Material.Builder(32003, resource('pj', 'carbondisulfide'))
                 .dust()
                 .color(0xa89932)
@@ -44,8 +44,5 @@ event_manager.listen { MaterialEvent event ->
                 .color(0xa89932)
                 .build();
         carbondisulfide.setFormula("KOH", true);
-        def isopropyl = new Material.Builder(32004, resource('pj', 'isopropyl'))
-                .fluid()
-                .build();
-        isopropyl.setFormula("C3H8O", true);
+       
 }
