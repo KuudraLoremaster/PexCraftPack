@@ -10,7 +10,7 @@ import gregtech.client.renderer.texture.Textures
 import gregtech.common.blocks.BlockMetalCasing.MetalCasingType
 import gregtech.common.blocks.MetaBlocks
 
-class MetaTileEntityVacuumFreezer extends RecipeMapMultiblockController {
+class MetaTileEntityLexer extends RecipeMapMultiblockController {
 
     /*(1)!*/
     MetaTileEntityVacuumFreezer(ResourceLocation metaTileEntityId) {
@@ -19,7 +19,7 @@ class MetaTileEntityVacuumFreezer extends RecipeMapMultiblockController {
 
     @Override
     MetaTileEntity createMetaTileEntity(IGregTechTileEntity tileEntity) {
-        return new MetaTileEntityVacuumFreezer(metaTileEntityId) /*(3)!*/
+        return new MetaTileEntityLexer(metaTileEntityId) /*(3)!*/
     }
 
     @Override
