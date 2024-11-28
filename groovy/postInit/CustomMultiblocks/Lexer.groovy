@@ -13,7 +13,7 @@ import gregtech.common.blocks.MetaBlocks
 class MetaTileEntityLexer extends RecipeMapMultiblockController {
 
     /*(1)!*/
-    MetaTileEntityVacuumFreezer(ResourceLocation metaTileEntityId) {
+    MetaTileEntityLexer(ResourceLocation metaTileEntityId) {
         super(metaTileEntityId, RecipeMaps.LEXER_RECIPES) 
     }
 
