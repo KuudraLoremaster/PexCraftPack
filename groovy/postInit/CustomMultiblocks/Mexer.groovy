@@ -10,10 +10,10 @@ import gregtech.client.renderer.texture.Textures
 import gregtech.common.blocks.BlockMetalCasing.MetalCasingType
 import gregtech.common.blocks.MetaBlocks
 
-class MetaTileEntityLexer extends RecipeMapMultiblockController {
+class MetaTileEntityMexer extends RecipeMapMultiblockController {
 
     /*(1)!*/
-    MetaTileEntityLexer(ResourceLocation metaTileEntityId) {
+    MetaTileEntityMexer(ResourceLocation metaTileEntityId) {
         super(metaTileEntityId, RecipeMaps.MEXER_RECIPES) 
     }
 
@@ -49,6 +49,6 @@ class MetaTileEntityLexer extends RecipeMapMultiblockController {
     /*(7)!*/
     @Override
     protected ICubeRenderer getFrontOverlay() {
-        return Textures.LEXER_OVERLAY
+        return Textures.MEXER_OVERLAY
     }
 }
