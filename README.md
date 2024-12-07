@@ -19,7 +19,7 @@ Every wanted to murder your enemies through pexological means? This is the modpa
 
 there are literally no features rn
 
-- nah
-- id
-- win
-- only in oslo
+- LEXER
+- PEXER
+- SEXER
+- MEXER
