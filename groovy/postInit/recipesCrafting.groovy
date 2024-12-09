@@ -75,3 +75,9 @@ crafting.addShaped('dynamo', item('immersiveengineering:metal_device1', 2) * 1, 
         [item('gregtech:meta_plate', 2064), item('gregtech:wire_coil'), item('gregtech:meta_plate', 2064)],
         [null, metaitem('plate.ultra_low_power_integrated_circuit'), null]
 ])
+
+crafting.addShaped('rizz', item('immersiveengineering:metal_device1', 2) * 1, [
+        [item('gregtech:meta_plate', 324), item('gregtech:wire_single', 25), item('gregtech:meta_plate', 324)],
+        [item('gregtech:meta_plate', 2064), item('gregtech:wire_coil'), item('gregtech:meta_plate', 2064)],
+        [null, metaitem('plate.ultra_low_power_integrated_circuit'), null]
+])
