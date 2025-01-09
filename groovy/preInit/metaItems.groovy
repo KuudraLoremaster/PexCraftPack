@@ -1,4 +1,4 @@
-import gregtech.api.unification.material.event.MaterialEvent
+7import gregtech.api.unification.material.event.MaterialEvent
 import gregtech.api.unification.material.Material
 import net.minecraft.util.ResourceLocation
 import static gregtech.api.unification.material.info.MaterialFlags.*
