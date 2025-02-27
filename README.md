@@ -17,8 +17,6 @@ Every wanted to murder your enemies through pexological means? This is the modpa
 
 ## Features
 
-there are literally no features rn
-
 - LEXER
 - PEXER
 - SEXER
